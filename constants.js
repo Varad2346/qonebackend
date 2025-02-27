@@ -1,11 +1,11 @@
 module.exports = {
   // Database
-  DB_NAME: "training_institute",
-  DB_USER: "root",
-  DB_HOST: "localhost",
+  DB_NAME: "defaultdb",
+  DB_USER: "avnadmin",
+  DB_HOST: "mysql-e33b5b4-varadlimbkar-cc06.f.aivencloud.com",
   DB_DIALECT: "mysql",
   DB_LOGGING: false,
-  DB_SYNC_FORCE: true,
+  DB_SYNC_FORCE: false,
   USER_COURSE_FOREIGN_KEY: "courseId",
   DB_CONNECTION_SUCCESS: "Connection has been established successfully.",
   DB_CONNECTION_ERROR: "Unable to connect to the database:",
