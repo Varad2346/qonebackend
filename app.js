@@ -14,7 +14,7 @@ const trainingReportRoutes = require("./routes/trainingReport.routes");
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.DB_PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -35,7 +35,7 @@ app.all("*", (req, res) => {
 
 // Error handling middleware
 app.use(errorHandler);
-
+ 
 (async () => {
   try {
     await db.sequelize.sync({ force: false }); // Use `force: true` for development only
